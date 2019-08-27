@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Swagger+Redoc</name>
+    </assembly>
+    <members>
+        <member name="M:Swagger_Redoc.Controllers.Servicos.PessoaController.PessoaHealthCheck">
+            <summary>
+            Health Check
+            </summary>        
+            <remarks><h2><b><i>Afere a resposta deste contexto do serviço.</i></b></h2></remarks>
+            <response code="200">OK Request</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:Swagger_Redoc.Controllers.Servicos.PessoaController.Pessoas">
+            <summary>
+            Pessoas
+            </summary>                
+            <remarks><h2><b><i>Lista todos os clientes.</i></b></h2></remarks>
+            <response code="200">OK Request</response>
+            <response code="204">Not Content</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:Swagger_Redoc.Controllers.Servicos.PessoaController.Pessoa(System.Int32)">
+            <summary>
+            Pessoa
+            </summary>                
+            <remarks><h2><b>Lista todas pessoas.</b></h2></remarks>
+            <param name="Id">Parâmetro requerido: id da Pessoa</param>
+            <response code="200">OK Request</response>
+            <response code="204">Not Content</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:Swagger_Redoc.Controllers.Servicos.PessoaController.PessoaNovo(Swagger_Redoc.Commands.Pessoa.Input.PessoaAdicionarCommand)">
+            <summary>
+            Incluir Pessoa 
+            </summary>                
+            <remarks><h2><b>Incluia nova Pessoa na base de dados.</b></h2></remarks>
+            <param name="command" >Parâmetro requerido: command de Insert</param>
+            <response code="200">OK Request</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:Swagger_Redoc.Controllers.Servicos.PessoaController.PessoaAlterar(Swagger_Redoc.Commands.Pessoa.Input.PessoaAtualizarCommand)">
+            <summary>
+            Alterar Pessoa
+            </summary>        
+            <remarks><h2><b>Altera a Pessoa na base de dados.</b></h2></remarks>        
+            <param name="command" >Parâmetro requerido: command de Update</param>
+            <response code="200">OK Request</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:Swagger_Redoc.Controllers.Servicos.PessoaController.PessoaExcluir(Swagger_Redoc.Commands.Pessoa.Input.PessoaDeletarCommand)">
+            <summary>
+            Excluir Pessoa
+            </summary>                
+            <remarks><h2><b>Exclui a Pessoa na base de dados.</b></h2></remarks>
+            <param name="command" >Parametro requerido: command de Delete</param>
+            <response code="200">OK Request</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+    </members>
+</doc>
