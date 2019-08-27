@@ -59,8 +59,6 @@ namespace Swagger_Redoc
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger+Redoc");
-                //c.InjectStylesheet("/swagger-ui/custom.css");
-                //c.InjectJavascript("/swagger-ui/custom.js");
             });
 
             app.UseMvc();
